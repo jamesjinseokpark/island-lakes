@@ -18,12 +18,12 @@ public class IndexControllerTest {
     private TestRestTemplate restTemplate;
 
     @Test
-    public void 메인페이지_로딩()
+    public void loading_maiPage()
     {
         //when
         String body = this.restTemplate.getForObject("/", String.class);
 
         //then
-        assertThat(body).contains("스프링 부트로 시작하는 웹 서비스");
+        assertThat(body).contains("hellog With MTZ");
     }
 }
